@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>davewidmer dot net :: jQuery Prefill plugin</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../jquery.notify.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('#notify').slideUp();
+
+			$('#message').click(function(e){
+				e.preventDefault();
+				$('#notify').notify('Here is a message');
+			});
+		});
+	</script>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="reset.css" type="text/css" rel="stylesheet">
+	<style>
+		#notify {
+			position:fixed;
+			top: 0px;
+			left:0px;
+			width:100%;
+			z-index:1000;
+			padding:10px;
+			margin:0;
+			font-size:13px;
+			font-weight:bold;
+		}
+		#notify.message {
+			color:#666;
+			background-color:#BBBBBB;
+		}
+		button{
+			margin:16px 0;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="notify"></div>
+
+	<div id="page">
+		<h1>jQuery Notfcation Test</h1>
+
+		<button id="message">Click me for a message</button>
+
+		<p><a href="http://www.davewidmer.net">Visit davewidmer.net</a></p>
+	</div>
+
+</body>
+</html>

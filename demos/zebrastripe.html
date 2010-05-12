@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>davewidmer dot net :: jQuery Zebrastipe plugin</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../jquery.zebrastripe.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			$('#zebra').zebrastripe();
+		});
+	</script>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="reset.css" type="text/css" rel="stylesheet">
+	<style>
+		.even{
+			background-color:#EEE;
+		}
+		.odd{
+			background-color: #DDD;
+		}
+		table{
+			margin:20px 0;
+		}
+		td, th{
+			padding:6px;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<h1>jQuery Zebra Stripe Test</h1>
+
+		<table id="zebra">
+			<thead>
+			<tr>
+				<th>Code Name</th>
+				<th>Version</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Lucid Lynx</td>
+					<td>10.04</td>
+				</tr>
+				<tr>
+					<td>Karmic Koala</td>
+					<td>9.10</td>
+				</tr>
+				<tr>
+					<td>Januty Jackalope</td>
+					<td>9.04</td>
+				</tr>
+				<tr>
+					<td>Intrepid Ibex</td>
+					<td>8.10</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p><a href="http://www.davewidmer.net">Visit davewidmer.net</a></p>
+	</div>
+
+</body>
+</html>
