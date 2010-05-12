@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>davewidmer dot net :: jQuery Prefill plugin</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../jquery.prefill.js"></script>
+
+	<script>
+		$(document).ready(function(){
+			// Stop the form submission, this is just a test...
+			$('#prefill-test').submit(function(e){
+				e.preventDefault();
+			});
+
+			$('#FirstName').prefill();
+			$('#LastName').prefill();
+			$('#Email').prefill();
+		});
+	</script>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="reset.css" type="text/css" rel="stylesheet">
+	<style>
+		p{margin-bottom:20px;}
+
+		form p{
+			position:relative;
+		}
+
+		/* Prefill styles */
+		.prefill{
+			color:#666;
+		}
+
+		label.prefill{
+			position:absolute;
+			top:5px;
+			left:5px;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<h1>jQuery Prefill Test</h1>
+
+		<form method="post" action="" id="prefill-test">
+			<p>
+				<label for="FirstName">First Name</label>
+				<input type="text" name="FirstName" id="FirstName">
+			</p>
+
+			<p>
+				<label for="LastName">Last Name</label>
+				<input type="text" name="LastName" id="LastName">
+			</p>
+
+			<p>
+				<label for="Email">Email</label>
+				<input type="text" name="Email" id="Email">
+			</p>
+		</form>
+
+		<p><a href="http://www.davewidmer.net">Visit davewidmer.net</a></p>
+	</div>
+
+</body>
+</html>

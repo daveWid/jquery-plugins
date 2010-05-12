@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>davewidmer dot net :: jQuery Disclosure plugin</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script src="../jquery.disclosure.js"></script>
+
+	<script>
+	  $(document).ready(function(){
+		// Set the disclosure sections
+		$('h2').disclosure('p');
+	  });
+	</script>
+
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link href="reset.css" type="text/css" rel="stylesheet">
+	<style>
+	  h2 span.disclosure{
+	  font-size:14px;
+	  float:right;
+	}
+	  p{ margin-bottom:0; }
+	</style>
+</head>
+<body>
+	<div id="page">
+		<h1>jQuery Disclosure Test</h1>
+
+		<h2>Section 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tincidunt odio at blandit.
+		Vivamus sit amet ipsum id sem auctor mattis. Quisque sed neque vitae odio sollicitudin tincidunt quis id
+		nisl. Pellentesque at justo nisl. Donec non nisl ullamcorper mauris dignissim luctus sit amet ut dui.
+		Suspendisse ut dui id ipsum viverra tempus at eget nulla. Sed ut sem libero. Vestibulum ante ipsum
+		primis in faucibus orci luctus et ultrices posuere cubilia Curae; In velit mi, ornare at gravida non,
+		egestas eget orci.</p>
+
+		<h2>Section 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tincidunt odio at blandit.
+		Vivamus sit amet ipsum id sem auctor mattis. Quisque sed neque vitae odio sollicitudin tincidunt quis id
+		nisl. Pellentesque at justo nisl. Donec non nisl ullamcorper mauris dignissim luctus sit amet ut dui.
+		Suspendisse ut dui id ipsum viverra tempus at eget nulla. Sed ut sem libero. Vestibulum ante ipsum
+		primis in faucibus orci luctus et ultrices posuere cubilia Curae; In velit mi, ornare at gravida non,
+		egestas eget orci.</p>
+
+		<h2>Section 3</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt tincidunt odio at blandit.
+		Vivamus sit amet ipsum id sem auctor mattis. Quisque sed neque vitae odio sollicitudin tincidunt quis id
+		nisl. Pellentesque at justo nisl. Donec non nisl ullamcorper mauris dignissim luctus sit amet ut dui.
+		Suspendisse ut dui id ipsum viverra tempus at eget nulla. Sed ut sem libero. Vestibulum ante ipsum
+		primis in faucibus orci luctus et ultrices posuere cubilia Curae; In velit mi, ornare at gravida non,
+		egestas eget orci.</p>
+
+		<p><a href="http://www.davewidmer.net">Visit davewidmer.net</a></p>
+	</div>
+
+</body>
+</html>
